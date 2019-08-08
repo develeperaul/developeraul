@@ -469,11 +469,18 @@ body {
   margin: 25px 0;
 }
 
+.navbar__btn {
+  display: none;
+}
+
 .navbar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .navbar-list__item {
@@ -492,6 +499,65 @@ body {
 .navbar__phone {
   font-family: "Marmelad-ru";
   font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .navbar__btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #c4d272;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-radius: 50%;
+    position: relative;
+  }
+  .navbar__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -10px;
+    background-color: #68751d;
+  }
+  .navbar__line:after, .navbar__line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -10px;
+    background-color: #68751d;
+  }
+  .navbar__line:before {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .navbar__line:after {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .navbar-list {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 20px;
+    height: 1px;
+    border: 1px solid #000;
+    display: none;
+  }
+  .navbar__phone {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .header {

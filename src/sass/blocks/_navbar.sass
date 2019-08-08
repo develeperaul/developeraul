@@ -12,9 +12,12 @@
         font-weight: 300
         font-size: 25px
         margin: 25px 0
+    &__btn
+        display: none
     &-list
         display: flex
         padding: 0
+        flex-grow: 1
         &__item
             margin-left: 25px
             list-style: none
@@ -28,5 +31,53 @@
         font-family: "Marmelad-ru"
         font-size: 18px
         
+@media (max-width: 900px)
+  .navbar
+      &__btn
+        display: inline-block
+        width: 50px
+        height: 50px
+        background-color: $btn-bg
+        box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5)
+        order: 3
+        border-radius: 50%
+        position: relative
+      &__line
+          position: absolute
+          top: 50%
+          left: 50%
+          width: 20px
+          height: 2px
+          margin-top: -1px
+          margin-left: -10px
+          background-color: $btn-text
+          &:after,
+          &:before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 20px
+            height: 2px
+            margin-top: -1px
+            margin-left: -10px
+            background-color: $btn-text
+          &:before
+              transform: translateY(5px)
+          &:after
+              transform: translateY(-5px)
+          
+
+      &-list
+        order: 3
+        width: 20px
+        height: 1px
+        border: 1px solid #000
+        display: none
+        
+
+      &__phone
+        order: 2
+
 
   
