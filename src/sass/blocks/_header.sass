@@ -2,7 +2,7 @@
     padding-top: 143px
     background: url("../image/header.jpg") center no-repeat
     background-size: cover
-    height: 110vh
+    height: 100vh
     &-block
         display: flex
         flex-direction: column
@@ -21,3 +21,28 @@
 
         font-size: 19px
         padding: 12px 14px
+
+@media (max-width: 992px)
+    .header
+        padding-top: 100px
+        &__title
+            font-size: 35px
+        &__subtitle
+            font-size: 25px
+            margin-bottom: 30px
+    .btn
+        &__text
+            font-size: 16px
+            padding: 10px 11px
+
+@media (max-width: 576px)
+    .header
+        padding-top: 100px
+        &__title
+            font-size: 25px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 20px
+    .btn
+        &__text
+            padding: 5px 6px

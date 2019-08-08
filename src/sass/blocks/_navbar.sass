@@ -31,8 +31,10 @@
         font-family: "Marmelad-ru"
         font-size: 18px
         
-@media (max-width: 900px)
+@media (max-width: 992px)
   .navbar
+      &__logo
+        flex-grow: 3
       &__btn
         display: inline-block
         width: 50px
@@ -66,7 +68,6 @@
               transform: translateY(5px)
           &:after
               transform: translateY(-5px)
-          
 
       &-list
         order: 3
@@ -78,6 +79,7 @@
 
       &__phone
         order: 2
+        margin-right: 20px
 
 
   
