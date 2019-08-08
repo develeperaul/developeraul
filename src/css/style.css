@@ -404,6 +404,20 @@ body {
   margin: auto;
 }
 
+.btn {
+  border: none;
+  border-radius: 3px;
+  background-color: #c4d272;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn__text {
+  color: #68751d;
+  display: block;
+  font-family: "Kelson", sans-serif;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -430,6 +444,8 @@ body {
 
 .navbar {
   background-color: #bcc1c7;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.34);
   position: fixed;
   width: 100%;
 }
@@ -476,5 +492,42 @@ body {
 .navbar__phone {
   font-family: "Marmelad-ru";
   font-size: 18px;
+}
+
+.header {
+  padding-top: 143px;
+  background: url("../image/header.jpg") center no-repeat;
+  background-size: cover;
+  height: 110vh;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-family: "Kelson-bold", sans-serif;
+  font-size: 54px;
+  line-height: 24px;
+}
+
+.header__subtitle {
+  font-family: "Kelson-bold", sans-serif;
+  font-size: 35px;
+  margin-bottom: 42px;
+}
+
+.btn__text {
+  font-size: 19px;
+  padding: 12px 14px;
 }
 /*# sourceMappingURL=style.css.map */
