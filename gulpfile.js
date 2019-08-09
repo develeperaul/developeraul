@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const htmlMin = require('gulp-htmlmin');
-const tinypng = require('gulp-tinypng-compress');
 const imagemin = require('gulp-imagemin');
 
 gulp.task('image', (done) =>

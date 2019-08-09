@@ -19,6 +19,7 @@
   "homepage": "https://github.com/develeperaul/repeair#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-imagemin": "^6.0.0"
   },
