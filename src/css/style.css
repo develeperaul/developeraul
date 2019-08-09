@@ -412,7 +412,7 @@ body {
           box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-.btn__text {
+.btn-text {
   color: #68751d;
   display: block;
   font-family: "Kelson", sans-serif;
@@ -612,7 +612,7 @@ body {
   margin-bottom: 250px;
 }
 
-.btn__text {
+.btn-text {
   font-size: 19px;
   padding: 12px 14px;
 }
@@ -645,7 +645,7 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .btn__text {
+  .btn-text {
     padding: 5px 6px;
   }
 }
@@ -764,5 +764,59 @@ body {
   background-color: red;
   background: url("../image/itme.png") center no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 992px) {
+  .advantages:before {
+    display: none;
+  }
+}
+
+.work-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-block__item {
+  text-align: center;
+}
+
+.work-block__title {
+  font-family: "Marmelad-ru";
+  font-size: 22px;
+}
+
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.work-list__item {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.work-list__link {
+  font-family: "Marmelad-ru";
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .btn-text_768 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
