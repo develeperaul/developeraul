@@ -45,7 +45,7 @@
         <div class="container">
             <div class="header-block">
                 <h1 class="header__title">
-                    Создание сайтов под ключь
+                    Создание сайтов под ключ
                 </h1>
                 <span class="header__subtitle">от дизайна до админки</span>
                 <button class="btn">
@@ -183,36 +183,76 @@
     <section class="work">
         <div class="container">
             <h2 class="section-title work__title">Мои последнмие работы</h2>
-            <nav class="work-block__nav">
-                <ul class="work-list">
-                    <li class="work-list__item"><a href="#" class="work-list__link">все</a></li>
-                    <li class="work-list__item"><a href="#" class="work-list__link">дизайн</a></li>
-                    <li class="work-list__item"><a href="#" class="work-list__link">landing</a></li>
-                    <li class="work-list__item"><a href="#" class="work-list__link">multilanding</a></li>
-                    <li class="work-list__item"><a href="#" class="work-list__link">Wordpress</a></li>
-                    <li class="work-list__item"><a href="#" class="work-list__link">MODX</a></li>
-                </ul>
-            </nav>
-            <div class="work-block">
-                <div class="work-block__item">
+            <div class="slider work-block">
+                <div class="slider-item work-block__item">
                     <div class="work-block__img">img</div>
                     <div class="work-block__title">Landing</div>
                     <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
                 </div>
-                <div class="work-block__item">
+                <div class="slider-item work-block__item">
                     <div class="work-block__img">img</div>
                     <div class="work-block__title">Landing</div>
                     <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
                 </div>
-                <div class="work-block__item">
+                <div class="slider-item work-block__item">
+                    <div class="work-block__img">img</div>
+                    <div class="work-block__title">Landing</div>
+                    <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
+                </div>
+                <div class="slider-item work-block__item">
+                    <div class="work-block__img">img</div>
+                    <div class="work-block__title">Landing</div>
+                    <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
+                </div>
+                <div class="slider-item work-block__item">
+                    <div class="work-block__img">img</div>
+                    <div class="work-block__title">Landing</div>
+                    <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
+                </div>
+                <div class="slider-item work-block__item">
                     <div class="work-block__img">img</div>
                     <div class="work-block__title">Landing</div>
                     <button class="btn"><span class="btn-text">Смотреть <span class="btn-text_768">работу</span></span></button>
                 </div>
             </div>
+            <div class="arrows portfolio__arrows">
+                    <div class="arrows__left">
+                      <img src="img/left-arrow.png" alt="">
+                    </div>
+                    <div class="arrows__right">
+                      <img src="img/right-arrow.png" alt="">
+                    </div>
+            </div>
         </div>
         <!-- /.container -->
     </section>
     <!-- /.work -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        prevArrow: $(".arrows__left"),
+        nextArrow: $(".arrows__right"),
+        responsive: [
+          {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+          },
+          {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+          }
+        ]
+      })
+    </script>
 </body>
 </html>
