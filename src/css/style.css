@@ -1018,13 +1018,9 @@ body {
   background: none;
   padding: 0;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
 }
 
 .price-plus {
-  border: 0.5px solid #000;
-  border-radius: 4px;
   position: relative;
 }
 
@@ -1035,7 +1031,7 @@ body {
   background: #000;
   height: 1px;
   width: 10px;
-  top: 9.5px;
+  bottom: 7px;
   left: 4.5px;
 }
 
@@ -1048,13 +1044,11 @@ body {
   background: #000;
   height: 1px;
   width: 10px;
-  top: 9.5px;
+  bottom: 7px;
   left: 4.5px;
 }
 
 .price-min {
-  border: 0.5px solid #000;
-  border-radius: 4px;
   position: relative;
 }
 
@@ -1065,8 +1059,8 @@ body {
   background: #000;
   height: 1px;
   width: 10px;
-  top: 9.5px;
-  left: 4.5px;
+  bottom: 7px;
+  right: 4.5px;
 }
 
 .price-list {
@@ -1095,6 +1089,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 40px;
 }
 
 .price-block__list {
@@ -1106,6 +1106,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .price-block__item {
@@ -1128,6 +1131,7 @@ body {
 
 .price-block__calc {
   text-align: center;
+  width: 124px;
   border-radius: 7px;
   background-color: #a7b8eb;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48), inset 0px 30000px 0px 0px rgba(0, 0, 0, 0.15);
@@ -1136,9 +1140,46 @@ body {
 
 .price-block__sum {
   text-align: center;
+  width: 124px;
   border-radius: 7px;
   background-color: #a69da7;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48), inset 0px 30000px 2px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48), inset 0px 30000px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.price-total {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 120px;
+  margin-left: 120px;
+  padding: 28px;
+}
+
+.price-total__title {
+  font-family: "Kelson";
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.price-total__sum {
+  font-family: "Kelson-bold";
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
