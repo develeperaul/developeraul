@@ -1,4 +1,8 @@
 .price
+    background: url("../image/price_bg.jpg") no-repeat
+    background-size: cover
+    padding-bottom: 65px
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.34)
     &__count
         vertical-align: text-bottom
     &-btn
@@ -91,6 +95,7 @@
         height: 200px
         display: flex
         flex-direction: column
+        justify-content: space-between
         border-radius: 7px
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48)
         align-items: center
@@ -102,14 +107,54 @@
             font-family: "Kelson"
             font-size: 21px
             margin: 0
-            margin-bottom: 15px
+            margin-bottom: 20px
         &__sum
             font-family: "Kelson-bold"
             font-size: 36px
-            margin-bottom: 15px
-    
+            margin-bottom: 20px
+@media (max-width: 992px)
+    .price
+        &-total
+            margin-left: 50px
+            margin-right: 0px
+@media (max-width: 768px)
+    .price
+        &-list
+            &__link
+                font-size: 16px
+        &-total
+            align-items: center
+            margin-top: 20px
+            margin-left: 0
         
+        &-block
+            padding: 8px 0px
+            justify-content: center
+            flex-wrap: wrap
+            &__list 
+                margin-bottom: 0
+            &__item
+                font-size: 14px
+                padding: 0
+                &:first-child
+                    margin-bottom: 30px
+                    font-size: 15px
+            &__calc
+                min-width: 65px
+                flex-basis: 65px
+            &__sum
+                min-width: 65px
+                flex-basis: 65px
+            &__name
+                padding: 0
+    .p_0
+        padding: 0
+@media (max-width: 380px)
+    .price
+        &-block
+            justify-content: space-around
+            border: none
+            &__sum
+                display: none
 
-
-        
 

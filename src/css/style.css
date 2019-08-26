@@ -533,6 +533,15 @@ body {
   font-size: 35px;
 }
 
+.section-subtitle {
+  display: block;
+  font-family: "Kelson-bold", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 42px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -741,7 +750,7 @@ body {
     padding-top: 100px;
   }
   .header__title {
-    font-size: 25px;
+    font-size: 22px;
   }
   .header__subtitle {
     font-size: 16px;
@@ -749,6 +758,7 @@ body {
   }
   .btn-text {
     padding: 5px 6px;
+    font-size: 16px;
   }
 }
 
@@ -871,6 +881,30 @@ body {
 @media (max-width: 992px) {
   .advantages:before {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-block__item {
+    max-width: 250px;
+    margin-left: 0;
+  }
+  .m-t {
+    margin-top: 50px;
   }
 }
 
@@ -1007,6 +1041,20 @@ body {
   .btn-text_768 {
     display: none;
   }
+}
+
+@media (max-width: 576px) {
+  .arrows {
+    display: none;
+  }
+}
+
+.price {
+  background: url("../image/price_bg.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 65px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.34);
 }
 
 .price__count {
@@ -1157,6 +1205,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 7px;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
@@ -1174,12 +1225,113 @@ body {
   font-family: "Kelson";
   font-size: 21px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .price-total__sum {
   font-family: "Kelson-bold";
   font-size: 36px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .price-total {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-list__link {
+    font-size: 16px;
+  }
+  .price-total {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .price-block {
+    padding: 8px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-block__list {
+    margin-bottom: 0;
+  }
+  .price-block__item {
+    font-size: 14px;
+    padding: 0;
+  }
+  .price-block__item:first-child {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .price-block__calc {
+    min-width: 65px;
+    -ms-flex-preferred-size: 65px;
+        flex-basis: 65px;
+  }
+  .price-block__sum {
+    min-width: 65px;
+    -ms-flex-preferred-size: 65px;
+        flex-basis: 65px;
+  }
+  .price-block__name {
+    padding: 0;
+  }
+  .p_0 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .price-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: none;
+  }
+  .price-block__sum {
+    display: none;
+  }
+}
+
+.call__subtitle {
+  text-align: center;
+  max-width: 500px;
+  line-height: 30px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__btn {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.input {
+  border: 1px solid #D8E1E4;
+  border-radius: 4px;
+  font-family: "Kelson", sans-serif;
+  background: #fff;
+  font-size: 16px;
+  padding: 15px;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
   margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
