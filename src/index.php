@@ -8,7 +8,7 @@
     <title>DevelopeRaul</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" >
         <div class="container">
             <div class="navbar-block">
                 <span class="navbar__logo">
@@ -16,16 +16,22 @@
                 </span> <!-- /.navbar__logo -->
                 <ul class="navbar-list">
                     <li class="navbar-list__item">
-                        <a href="" class="navbar-list__link">услуги</a>
+                        <a href="#1" class="navbar-list__link">услуги</a>
                     </li>
                     <li class="navbar-list__item">
-                        <a href="" class="navbar-list__link">преимущества</a>
+                        <a href="#2" class="navbar-list__link">преимущества</a>
                     </li>
                     <li class="navbar-list__item">
-                        <a href="" class="navbar-list__link">портфолио</a>
+                        <a href="#3" class="navbar-list__link">портфолио</a>
                     </li>
                     <li class="navbar-list__item">
-                        <a href="" class="navbar-list__link">контакты</a>
+                        <a href="#4" class="navbar-list__link">контакты</a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a href="#5" class="navbar-list__link">контакты</a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a href="#6" class="navbar-list__link">контакты</a>
                     </li>
                 </ul>
                 <!-- /.navbar-list -->
@@ -41,7 +47,7 @@
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
-    <header class="header">
+    <header class="header" id="1">
         <div class="container">
             <div class="header-block">
                 <h1 class="header__title">
@@ -59,7 +65,7 @@
         <!-- /.container -->
     </header>
     <!-- /.header -->
-    <section class="services">
+    <section class="services" id="2">
         <div class="container">
             <h2 class="section-title services__title">
                 Услуги
@@ -98,7 +104,7 @@
         <!-- /.container -->
     </section>
     <!-- /.services -->
-    <section class="advantages">
+    <section class="advantages" id="3">
         <div class="container">
             <h2 class="section-title advantages__title">Преимущества работы со мной</h2>
             <div class="advantages-block m-t">
@@ -180,7 +186,7 @@
         <!-- /.container -->
     </section>
     <!-- /.advantages -->
-    <section class="work">
+    <section class="work" id="4">
         <div class="container">
             <h2 class="section-title work__title">Мои последние работы</h2>
             <div class="slider work-block">
@@ -227,7 +233,7 @@
         <!-- /.container -->
     </section>
     <!-- /.work -->
-    <section class="price">
+    <section class="price" id="5">
         <div class="container">
             <h2 class="section-title price__title">Прайс</h2>
             <ul class="price-list">
@@ -322,21 +328,24 @@
         <!-- /.container -->
     </section>
     <!-- /.price -->
-    <section class="call">
+    <section class="call" id="6">
         <div class="container">
             <h2 class="section-title call__title">Написать мне</h2>
             <span class="section-subtitle call__subtitle">
                 Возникло желание познакомиться поближе или уточнить детали? Воспользуйтесь этой формой и я обязательно отвечу Вам.
             </span>
-            <div class="call-form">
-                <form action="#" class="form">
-                    <input type="text" class="form__name input" placeholder="Имя">
-                    <input type="text" class="form__email input" placeholder="E-mail">
-                    <textarea name="message" cols="30" rows="10" class="form__message input" placeholder="Сообщение"></textarea>
-                    <button class="btn form__btn"><span class="btn-text">
-                            Отправить сообщение
-                    </span></button>
-                </form>
+            <div class="form-container call-form">
+                <div class="note"></div>
+                <div class="fields">
+                    <form class="ajax-contact-form form" action="">
+                    <input type="text" name="name" class="form__name input" placeholder="Имя">
+                        <input type="email" name="email" class="form__email input" placeholder="E-mail">
+                        <textarea name="message" cols="30" rows="10" class="form__message input" placeholder="Сообщение"></textarea>
+                        <button  type="submit" name="submit"  class="btn form__btn form-container__btn"><span class="btn-text">
+                                Отправить сообщение
+                        </span></button>
+                    </form>
+                </div>
             </div>
             <!-- /.call-form -->
         </div>
@@ -345,7 +354,16 @@
     <!-- /.call -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/pageScroll.min.js"></script>
+    <script src="contactform.js"></script>
     <script>
+        //ПЛАВНЫЙ СКРОЛЛ
+        jQuery(document).ready(()=>{
+            $("nav a").mPageScroll2id({
+                
+            });
+        })
+        //СЛАЙДЕР
         $('.slider').slick({
         infinite: true,
         slidesToShow: 3,

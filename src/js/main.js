@@ -11,4 +11,6 @@ $(()=>{
         modal.removeClass("modal_active")
     })
 
+   
+
 })
