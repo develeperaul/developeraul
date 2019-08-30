@@ -17,10 +17,43 @@
         margin-bottom: 42px
 .btn
     margin-bottom: 250px
+    cursor: pointer
     &-text
         font-size: 19px
         padding: 12px 14px
-
+    a
+        display: inline-block
+        text-decoration: none
+        color: $btn-text
+.modal-content
+    position: relative
+    top: 10vh
+    padding: 50px
+    border-radius: 10px
+    .close-icon
+        position: absolute
+        display: block
+        width: 32px
+        height: 32px    
+        right: 9px
+        top: 9px
+        opacity: 0.3
+        &:hover 
+            opacity: 1
+        &:after, 
+        &:before
+            content: ""
+            position: absolute
+            right: 13px
+            top: 0px
+            height: 30px
+            width: 2px
+            background-color: #333
+        &:before 
+            transform: rotate(45deg)
+        &:after 
+            transform: rotate(-45deg)
+        
 @media (max-width: 992px)
     .header
         padding-top: 100px
